@@ -1,0 +1,158 @@
+.our-friends {
+    max-height: 877px;
+    background: var(--color-light-l);
+    &__title {
+        padding-top: 80px;
+        margin: 0 auto;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: var(--color-dark-l);
+    }
+    &__wrapper {
+        position: relative;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__arrow-left {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 52px;
+        height: 52px;
+        transform: translateY(-50%);
+        border: 2px solid var(--color-primary);
+        border-radius: 100%;
+        transform: translateY(-50%);
+        z-index: 0;
+        svg {
+            padding: 23px 19px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: var(--color-primary);
+            border-radius: 100%;
+            transition: 0.5s;
+        }
+    }
+    &__arrow-right {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 52px;
+        height: 52px;
+        border: 2px solid var(--color-primary);
+        border-radius: 100%;
+        transform: translateY(-50%);
+        z-index: 0;
+        svg {
+            padding: 23px 19px;
+        }
+        &:hover {
+            cursor: pointer;
+            background-color: var(--color-primary);
+            border-radius: 100%;
+            transition: 0.5s;
+        }
+    }
+    &__slider {
+        position: relative;
+        margin: 0 108px;
+
+        
+    }
+    &__cards {
+        display: flex;
+        position: relative;
+        gap: 91px;
+        right: 360px;
+        
+    }
+    &__card {
+        border-radius: 9px;
+        max-width: 270px;
+        height: 435px;
+        background: var(--color-light-s);
+        cursor: pointer;
+        &:hover {
+            filter: contrast(115%);
+            transition: 0.5s;
+            button {
+                cursor: pointer;
+                background-color: var(--color-primary);
+                border-radius: 100px;
+                transition: 0.5s;
+            }
+        }
+/*         &:nth-child(2) {
+            margin: 0 88px;
+        } */
+        h3 {
+            margin-top: 25px;
+            margin-bottom: 0;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 20px;
+            letter-spacing: 0.06em;
+            text-align: center;
+            color: var(--color-dark-l);
+        }
+        button {
+            display: block;
+            margin: 30px auto 0;
+            border: 2px solid var(--color-primary);
+            border-radius: 100px;
+            width: 187px;
+            height: 52px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: var(--color-dark-3xl);
+            background-color: var(--color-light-s);
+            &:hover {
+                cursor: pointer;
+                background-color: var(--color-primary);
+                border-radius: 100px;
+                transition: 0.5s;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        margin: 60px auto 0;
+        border-radius: 100px;
+        width: 261px;
+        height: 52px;
+        padding-bottom: 100px;
+        text-decoration: none;
+        span {
+            display: block;
+            border-radius: 100px;
+            padding: 15px 43px;
+            background: var(--color-primary);
+            font-family: var(--font-family);
+            text-align: center;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            border: 1px solid var(--color-primary);
+            color: var(--color-dark-3xl);
+            &:hover {
+                background: var(--color-primary-light);;
+                cursor: pointer;
+                border-radius: 100px;
+                border: 1px solid;
+                border-color: var(--color-primary);
+                transition: 0.5s;
+            }
+        }   
+    }
+}
